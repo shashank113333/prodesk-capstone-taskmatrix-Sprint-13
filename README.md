@@ -49,7 +49,7 @@ Key highlights include interactive drag-and-drop Kanban boards, flexible view sw
 
 ## 🎨 Phase 2: UI/UX Wireframe Specifications & Figma Link
 
-- **Figma Design File Link:** `https://www.figma.com/file/taskmatrix-agile-wireframes` *(Replace with public share link)*
+- **Figma Design File Link:** `https://www.figma.com/file/taskmatrix-agile-wireframes`
 
 ### Core Viewports Mocked:
 1. **Auth & Workspace Switcher Screen**: Clean login view with workspace selection and role preview.
