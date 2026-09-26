@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskMatrix — Agile Project Management System (Sprint 13 Blueprint)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              500: '#3b82f6',
+              600: '#2563eb',
+              900: '#1e3a8a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans antialiased selection:bg-blue-500 selection:text-white">
+  
+  <!-- Header Navbar -->
+  <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="bg-blue-600 p-2.5 rounded-xl shadow-lg shadow-blue-500/20">
+          <i class="fa-solid fa-kanban text-xl text-white"></i>
+        </div>
+        <div>
+          <h1 class="text-xl font-bold tracking-tight text-white flex items-center gap-2">
+            TaskMatrix
+            <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">Sprint 13 Blueprint</span>
+          </h1>
+          <p class="text-xs text-slate-400">Enterprise Agile Project Management System</p>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Status 200 OK — Live
+        </span>
+        <a href="https://github.com/shashank113333/prodesk-capstone-taskmatrix-Sprint-13" target="_blank" class="text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 px-3.5 py-2 rounded-lg transition font-medium border border-slate-700 flex items-center gap-2">
+          <i class="fa-brands fa-github text-sm"></i> GitHub Repo
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-6xl mx-auto px-4 py-10 space-y-10">
+    
+    <!-- Hero Banner -->
+    <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900 via-blue-950/40 to-slate-900 border border-slate-800 p-8 md:p-10 shadow-2xl">
+      <div class="max-w-3xl space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
+          <i class="fa-solid fa-rocket"></i> Capstone Project Phase 4: Advanced Integration
+        </div>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight leading-tight">
+          Architecture Blueprint & PRD Documentation
+        </h2>
+        <p class="text-slate-300 text-base leading-relaxed">
+          TaskMatrix is engineered for software teams requiring high-performance sprint tracking. This deployment serves as the official Sprint 13 architectural blueprint containing PRD specifications, Figma wireframes, and Zustand global state management models.
+        </p>
+        <div class="pt-4 flex flex-wrap items-center gap-4">
+          <a href="https://www.figma.com/design/ZtafCUc7y2pITYtzTCV527/Untitled?node-id=0-1&p=f&t=k09BurVGu46xyerq-0" target="_blank" class="bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-blue-600/30 transition flex items-center gap-2">
+            <i class="fa-brands fa-figma"></i> Open Figma Wireframes
+          </a>
+          <a href="https://github.com/shashank113333/prodesk-capstone-taskmatrix-Sprint-13" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-sm font-semibold px-5 py-2.5 rounded-xl border border-slate-700 transition flex items-center gap-2">
+            <i class="fa-regular fa-file-code"></i> View README PRD
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Details Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Tech Stack Card -->
+      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6 space-y-4">
+        <div class="flex items-center gap-3 text-blue-400">
+          <i class="fa-solid fa-layer-group text-xl"></i>
+          <h3 class="font-bold text-white text-lg">Tech Stack</h3>
+        </div>
+        <ul class="space-y-2.5 text-sm text-slate-300">
+          <li class="flex items-center justify-between border-b border-slate-800/80 pb-2">
+            <span class="text-slate-400">Framework:</span> <span class="font-medium text-white">Next.js 14+ (App Router)</span>
+          </li>
+          <li class="flex items-center justify-between border-b border-slate-800/80 pb-2">
+            <span class="text-slate-400">Language:</span> <span class="font-medium text-white">TypeScript</span>
+          </li>
+          <li class="flex items-center justify-between border-b border-slate-800/80 pb-2">
+            <span class="text-slate-400">Styling & UI:</span> <span class="font-medium text-white">Tailwind CSS + Shadcn UI</span>
+          </li>
+          <li class="flex items-center justify-between border-b border-slate-800/80 pb-2">
+            <span class="text-slate-400">State Management:</span> <span class="font-medium text-white">Zustand Global Store</span>
+          </li>
+          <li class="flex items-center justify-between">
+            <span class="text-slate-400">Drag & Drop:</span> <span class="font-medium text-white">@hello-pangea/dnd</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Core Features Roadmap -->
+      <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6 space-y-4 md:col-span-2">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3 text-emerald-400">
+            <i class="fa-solid fa-list-check text-xl"></i>
+            <h3 class="font-bold text-white text-lg">Prioritized Feature Roadmap</h3>
+          </div>
+          <span class="text-xs bg-slate-800 text-slate-300 px-2.5 py-1 rounded-md font-mono">Sprint 14 - 17</span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+          <div class="p-3.5 bg-slate-950/60 rounded-lg border border-slate-800 space-y-1">
+            <span class="text-xs font-bold text-blue-400 uppercase tracking-wider">Sprint 14 — Core MVP</span>
+            <p class="text-sm font-semibold text-white">Kanban Drag & Drop Board</p>
+            <p class="text-xs text-slate-400">Auth, 4 Column Drag-Drop, Task CRUD, Search & Filters.</p>
+          </div>
+          <div class="p-3.5 bg-slate-950/60 rounded-lg border border-slate-800 space-y-1">
+            <span class="text-xs font-bold text-purple-400 uppercase tracking-wider">Sprint 15 — Full Features</span>
+            <p class="text-sm font-semibold text-white">Subtask & Activity Stream</p>
+            <p class="text-xs text-slate-400">Task checklists, Activity feed, List view toggle, Dark mode.</p>
+          </div>
+          <div class="p-3.5 bg-slate-950/60 rounded-lg border border-slate-800 space-y-1">
+            <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">Sprint 16 — AI & Polish</span>
+            <p class="text-sm font-semibold text-white">AI Task Summarizer</p>
+            <p class="text-xs text-slate-400">Smart prompt integration, effort estimator, UX polish.</p>
+          </div>
+          <div class="p-3.5 bg-slate-950/60 rounded-lg border border-slate-800 space-y-1">
+            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Sprint 17 — Production</span>
+            <p class="text-sm font-semibold text-white">CI/CD & Final Go-Live</p>
+            <p class="text-xs text-slate-400">Production verification, zero lint warnings, performance audit.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Architecture Preview Card -->
+    <div class="bg-slate-900/60 border border-slate-800 rounded-xl p-6 space-y-4">
+      <div class="flex items-center justify-between">
+        <div class="flex items-center gap-3 text-purple-400">
+          <i class="fa-solid fa-sitemap text-xl"></i>
+          <h3 class="font-bold text-white text-lg">Zustand Global State Tree Architecture</h3>
+        </div>
+        <a href="https://github.com/shashank113333/prodesk-capstone-taskmatrix-Sprint-13" target="_blank" class="text-xs text-blue-400 hover:underline">View in README.md &rarr;</a>
+      </div>
+      <div class="p-4 bg-slate-950 rounded-lg border border-slate-800 font-mono text-xs text-slate-300 overflow-x-auto">
+        <p class="text-slate-500">// Global Stores Decoupled for Performance Optimization</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-3">
+          <div class="p-3 bg-slate-900 border border-slate-800 rounded">
+            <span class="text-blue-400 font-bold block">AuthStore</span>
+            <span class="text-slate-400 block mt-1">• currentUser</span>
+            <span class="text-slate-400 block">• switchRole()</span>
+          </div>
+          <div class="p-3 bg-slate-900 border border-slate-800 rounded">
+            <span class="text-emerald-400 font-bold block">BoardStore</span>
+            <span class="text-slate-400 block mt-1">• tasks: Record&lt;Id, Task&gt;</span>
+            <span class="text-slate-400 block">• moveTask()</span>
+          </div>
+          <div class="p-3 bg-slate-900 border border-slate-800 rounded">
+            <span class="text-purple-400 font-bold block">FilterStore</span>
+            <span class="text-slate-400 block mt-1">• searchQuery</span>
+            <span class="text-slate-400 block">• selectedPriority[]</span>
+          </div>
+          <div class="p-3 bg-slate-900 border border-slate-800 rounded">
+            <span class="text-amber-400 font-bold block">UIStore</span>
+            <span class="text-slate-400 block mt-1">• activeView: 'board'</span>
+            <span class="text-slate-400 block">• isCreateModalOpen</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-6 bg-slate-900/50">
+    <div class="max-w-6xl mx-auto px-4 text-center text-xs text-slate-500">
+      <p>TaskMatrix Capstone Sprint 13 — Author: Shashank (Frontend Specialist Track)</p>
+    </div>
+  </footer>
+
+</body>
+</html>
